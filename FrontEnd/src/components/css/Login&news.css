@@ -1,0 +1,275 @@
+:root {
+    --bg-color1: #077054;
+    --bg-color2: #E0DFDC;
+}
+
+/*當視窗縮小至1200px時，登入內容在上方圖片在下方*/
+@media (max-width: 1200px) {
+    #switch {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+.g_id_signin:hover{
+    opacity: 0.8; 
+}
+
+
+#app li {
+    font-size: 20px;
+}
+
+.bt1,
+.bt2,
+.bt3 {
+    font-size: 30px;
+}
+
+.bt1 {
+    text-align: right
+}
+
+.bt2 {
+    text-align: center
+}
+
+.bt3 {
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+
+    .bt1,
+    .bt2,
+    .bt3 {
+        font-size: 20px;
+    }
+}
+
+#app2 a {
+    color: black;
+}
+
+#app2 a:hover {
+    font-weight: bold;
+}
+
+
+
+#app2 label {
+    height: 60px;
+    font-size: 30px;
+}
+
+@media (max-width: 768px) {
+    #app2 label {
+        font-size: 20px;
+    }
+}
+
+
+
+#app2 input {
+    border: 3px solid var(--bg-color1);
+    width: 100%;
+    font-size: 25px;
+    border-radius: 0.25em;
+}
+
+
+#app2 input:focus {
+    box-shadow: 0px 0px 6px black;
+}
+
+@media (max-width: 768px) {
+    #app2 input {
+        font-size: 15px;
+    }
+}
+
+#app2 .ag {
+    border: 3px solid var(--bg-color1);
+    width: 1em;
+    font-size: 23px;
+    border-radius: 0.25em;
+}
+
+.ag:checked {
+    background-color: var(--bg-color1);
+    border-color: var(--bg-color1);
+}
+
+.bgcolor {
+    background-color: #fcf2e5;
+}
+
+
+/* 機器人方框 */
+.g-recaptcha {
+    transform: scale(1.13);
+}
+
+/* @media (max-width: 768px) {
+    .g-recaptcha {
+        transform: scale(0.9);
+    }
+} */
+
+
+.duck {
+    padding-right: 30px;
+}
+
+.robot {
+    display: flex;
+}
+
+.robot1 {
+    flex: 14;
+}
+
+.robot2 {
+    flex: 22;
+}
+
+
+#app2 .cl {
+    font-size: 20px;
+    padding-top: 3px;
+
+}
+
+.cl:hover {
+    cursor: pointer;
+}
+
+
+
+.passwordHelp {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.dflex {
+    display: flex;
+}
+
+
+
+
+.Help1 {
+    flex: 1;
+}
+
+.Help2 {
+    background-color: var(--bg-color2);
+    border-radius: 0.25em;
+    flex: 3;
+}
+
+
+
+
+
+
+.Registerbg1 {
+    position: absolute;
+    left: 0;
+    opacity: 0.5;
+
+}
+
+.Registerbg2 {
+    position: absolute;
+    right: 0;
+    bottom: 300px;
+    opacity: 0.5;
+
+}
+
+.goup {
+    position: relative;
+    z-index: 1;
+}
+
+.cl>.btn-primary {
+    background-color: transparent;
+    color: black;
+    font-size: 20px;
+    border: 0px;
+    margin-left: -13px;
+    padding-top: 2px;
+}
+
+@media (max-width: 768px) {
+
+    .cl>.btn-primary,
+    #app2 .cl {
+        font-size: 10px;
+    }
+}
+
+.Fbg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 0.6;
+}
+
+.min-height {
+    min-height: 610px;
+    position: relative;
+}
+
+#robotF {
+    margin: 20px 0px 30px 32%;
+}
+
+@media (max-width: 768px) {
+    #robotF {
+        margin: 10px 0px 30px 20%;
+    }
+}
+
+.Nbg {
+    position: absolute;
+    left: 28%;
+    bottom: 0;
+    opacity: 0.6;
+}
+
+.mycard {
+    margin-bottom: 25px;
+}
+
+.ccc {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ccc:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.mycardTitle {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-text>div {
+    display: inline-block;
+}
+
+.pa {
+    padding-top: 90px;
+}
+
+.myarticle h2 {
+    font-weight: bold;
+}
+
+.myarticle p {
+    font-size: 20px;
+    text-align: justify;
+}

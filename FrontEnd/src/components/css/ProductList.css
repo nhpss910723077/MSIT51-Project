@@ -1,0 +1,105 @@
+/* 左邊選單 */
+.menu-title span:hover {
+    background-color: var(--bg-color2);
+    color: black;
+}
+
+.menu-title :hover {
+    padding: 0;
+}
+
+.menu-link span {
+    border-radius: 5px;
+    padding: 5px;
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-link li:hover {
+    color: white;
+}
+
+.toggleGreen {
+    border-radius: 5px;
+    background-color: var(--bg-color1);
+    color: white;
+}
+
+/* 右邊內容 */
+.category-top-title h1 {
+    color: var(--bg-color1);
+    margin: 20px;
+    font-weight: bolder;
+}
+
+.category-book-card {
+    width: 240px;
+    margin-bottom: 10px;
+}
+
+.category-book-card img {
+    cursor: pointer;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+}
+
+.card-title {
+    cursor: pointer;
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    position: relative;
+}
+
+.card-text {
+    cursor: pointer;
+    margin: 0 0 0 70%;
+    font-size: 25px;
+    color: var(--bg-color1);
+}
+
+.turnRed {
+    color: rgb(181, 15, 15);
+}
+
+.each-book .card-body {
+    padding: 10px;
+}
+
+.card-text-container {
+    height: 50px;
+}
+
+/* 頁碼 */
+
+.page-container  {
+    margin: 20px;
+}
+
+.page-container a {
+    color: var(--bg-color1);
+    font-size: 30px;
+    border: var(--bg-color1) 2px solid;
+    padding: 10px 20px;
+}
+
+.page-container a:focus,
+.page-container a:hover {
+    background-color: var(--bg-color1);
+    color: white;
+    border: var(--bg-color1) 2px solid;
+    box-shadow: none;
+}
+
+.active>.page-link {
+    background-color: var(--bg-color1);
+    border-color: var(--bg-color1);
+    color: white;
+}

@@ -1,0 +1,452 @@
+/* =============== T1 =============== */
+
+/* ===== 全域 ===== */
+:root {
+    --bg-color1: #077054;
+    --bg-color2: #E0DFDC;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+section {
+    padding: 25px 0;
+}
+
+section:nth-of-type(2n) {
+    background-color: while;
+}
+
+.sending {
+    cursor: wait!important;
+}
+
+/* ===== sweetAlert ===== */
+div:where(.swal2-container) h2:where(.swal2-title) {
+    font-size: 25px;
+
+}
+
+div:where(.swal2-container) .swal2-html-container {
+    font-size: 20px;
+}
+
+div:where(.swal2-container) div:where(.swal2-popup) {
+    min-width: 500px;
+}
+
+/* =============== T2 =============== */
+
+/* =============== T3 =============== */
+/* 左邊選單 */
+.left-container-menu {
+    display: flex;
+    border: var(--bg-color2) solid 1px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;
+}
+
+.left-container-menu ul {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.left-container-menu a {
+    border-radius: 5px;
+    padding: 5px;
+    display: block;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.left-container-menu li {
+    list-style-type: none;
+    font-size: 25px;
+}
+
+.left-container-menu li :hover {
+    background-color: var(--bg-color1);
+    color: white;
+}
+
+.menu-title {
+    background-color: var(--bg-color2);
+    border-radius: 0px 0px 5px 5px;
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.menu-title :hover,
+.menu-title a:hover {
+    background-color: var(--bg-color2);
+    padding: 5px;
+    color: black;
+}
+
+.category-toggle-title {
+    display: none;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    background-color: var(--bg-color2);
+    border-radius: 5px 5px 0px 0px;
+    padding: 5px 15px;
+}
+
+.menu-link {
+    display: block;
+    width: 80%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.category-link-wrap {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 990px) {
+    .category-toggle-title {
+        display: block;
+    }
+}
+/* ===== 頁首 ===== */
+#navbarSupportedContent{
+    background-color: white;
+    margin-top: -2px;
+}
+
+#header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 0px 8px 0px gray;
+    height: 100px;
+    width: 100%;
+}
+
+.head-right-box a:focus {
+    color: var(--bg-color1);
+}
+
+.container-fluid .navbar-toggler,
+.navbar-toggler .navbar-toggler-icon {
+    color: var(--bg-color1);
+}
+
+.navbar-brand {
+    width: 170px;
+    margin-left: 30px;
+}
+
+@media (max-width:991px) {
+    .navbar-brand {
+        width: 140px;
+    }
+}
+
+.navbar-brand img {
+    object-fit: cover;
+}
+
+.navbar-nav,
+.head-right-box a {
+    border: 0;
+    background-color: white;
+    font-size: 25px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: var(--bg-color1);
+    font-weight: bolder;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.head-right-box i:hover,
+.head-right-box a:hover {
+    background-color: var(--bg-color1);
+    color: white;
+    border-radius: 5px;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.head-right-box i:hover {
+    transition: all 0.3s ease-in-out;
+    padding: 15px 15px;
+}
+
+.head-right-box input {
+    border: var(--bg-color1) 2px solid;
+    border-radius: 5px;
+}
+
+.head-right-box input:focus {
+    border: var(--bg-color1) 4px solid;
+}
+
+#headMember {
+    display: none;
+}
+
+.search {
+    margin: 0 14px 5px 0;
+}
+
+.head-right-box {
+    margin: 0 2px;
+}
+
+.head-right-box .search {
+    filter: drop-shadow(0 1px var(--bg-color2));
+}
+
+.head-right-box .search:after {
+    content: "";
+    background: var(--bg-color1);
+    width: 4px;
+    height: 20px;
+    position: absolute;
+    top: 30px;
+    transform: rotate(135deg);
+}
+
+.head-right-box .search>input {
+    color: var(--bg-color1);
+    font-size: 16px;
+    background: transparent;
+    width: 30px;
+    height: 30px;
+    padding: 15px;
+    border: solid 3px var(--bg-color1);
+    outline: none;
+    border-radius: 35px;
+    transition: width 0.5s;
+    cursor: pointer;
+}
+
+.head-right-box .search>input::placeholder {
+    color: var(--bg-color2);
+    opacity: 0;
+    transition: opacity 150ms ease-out;
+}
+
+.head-right-box .search>input:focus::placeholder {
+    opacity: 1;
+    color: var(--bg-color2);
+}
+
+.head-right-box .search>input:focus,
+.head-right-box .search>input:not(:placeholder-shown) {
+    width: 200px;
+    cursor: text;
+}
+
+/* 數字 */
+.cart-badge {
+    position: absolute;
+    font-size: 10px;
+    width: 25px;
+    height: 25px;
+    align-items: center;
+    background-color: rgb(193, 39, 45);
+    font-weight: bold;
+    padding: 5px;
+    top: 0;
+    right: 0;
+    border-radius: 15px;
+    min-width: max-content;
+    display: none;
+}
+
+.head-right-box .fa-cart-shopping {
+    position: relative;
+}
+
+/* ===== Banner ===== */
+.banner {
+    display: flex;
+    justify-content: center;
+}
+
+
+.subHeader-slick img {
+    object-fit: fill;
+}
+
+/* ===== 頁尾 ===== */
+.footer a {
+    color: white;
+}
+
+.footer>div {
+    font-size: 20px;
+}
+
+.footer .bg-dark {
+    padding: 20px 0;
+}
+
+.footer span {
+    font-size: 25px;
+    line-height: 50px;
+}
+
+@media (max-width:768px) {
+    .footer>div {
+        font-size: 15px;
+    }
+
+    .footer span {
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+/* TOP btn */
+.btn-top {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    min-width: 20px;
+    background: white;
+    border: 3px solid var(--bg-color1);
+    border-radius: 50px;
+    color: var(--bg-color1);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    padding: 25px 20px;
+    z-index: 1;
+}
+
+.btn-top span {
+    position: relative;
+    z-index: 10;
+}
+
+.btn-top:before,
+.btn-top:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.btn-top:before {
+    transform: translate3d(0, -100%, 0);
+    background-color: var(--bg-color1);
+    transition: transform 300ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.btn-top:after {
+    background-color: var(--bg-color2);
+    transform: translate3d(0, 100%, 0);
+    transition: transform 300ms 300ms cubic-bezier(0.16, 0.73, 0.58, 0.62);
+}
+
+.btn-top:hover:before {
+    transform: translate3d(0, 0, 0);
+}
+
+.btn-top:hover:after {
+    transform: translate3d(0, 0, 0);
+}
+
+#scrollButton {
+    transition: opacity 0.3s ease;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .btn-top {
+        right: 30px;
+        bottom: 30px;
+        min-width: 20px;
+        background: white;
+        border: 3px solid var(--bg-color1);
+        border-radius: 50px;
+        color: var(--bg-color1);
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        overflow: hidden;
+        padding: 15px 10px;
+    }
+}
+
+/* =============== T4 倢妤=============== */
+.mytitle {
+    font-weight: bold;
+    font-size: 40px;
+    height: 75px;
+    color: var(--bg-color1);
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .mytitle {
+        font-size: 30px;
+    }
+}
+
+.DarkGbtn {
+    font-weight: bold;
+    font-size: 30px;
+    height: 50px;
+    color: white;
+    background-color: var(--bg-color1);
+    border-radius: 10px;
+
+}
+
+.DarkGbtn:hover {
+    opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+    .DarkGbtn {
+        font-size: 20px;
+    }
+}
+
+/* =============== T5 =============== */

@@ -1,0 +1,206 @@
+/* ===== 全域 ===== */
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* ===== 頁首 ===== */
+:root {
+    --bg-color1: #399D26;
+    --bg-color2: #E0DFDC;
+}
+
+#head-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px;
+    background-color: var(--bg-color1);
+}
+
+.head-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    color: white;
+    font-size: 30px;
+}
+
+.head-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.head-right {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: calc(100% - 200px);
+}
+
+.head-right-box {
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+}
+
+.sending {
+    cursor: wait!important;
+}
+
+/* ===== 選單 ===== */
+.page {
+    display: flex;
+    justify-content: center;
+	align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.nav-wrap {
+    width: 300px;
+    padding: 25px 0;
+    background-color: white;
+    border-right: 1px #e0e0e0 solid;
+}
+
+.nav-overview-title {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    padding: 12.5px 25px;
+    color: #212121;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.nav-box-wrap, .nav-box-link-wrap {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.nav-box-title, .nav-box-link {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    padding: 12.5px 25px;
+    color: #757575;
+    font-weight: bold;
+    font-size: 20px;
+    flex-grow: 1;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-box-link {
+    padding-left: 60px;
+}
+
+.nav-box-title:hover, .nav-box-link:hover {
+    color: #212121;
+    font-weight: bold;
+    background-color: #EFEFEF;
+}
+
+.nav-box-title-icon{
+    width: 35px;
+    padding-right: 15px;
+    flex-grow: 0;
+}
+
+.nav-box-title-arrow{
+    flex-grow: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-box-title-arrow.arrow-down{
+    transform: rotate(90deg);
+}
+
+.nav-box-title-text{
+    flex-grow: 1;
+}
+
+/* ===== 內頁 ===== */
+.content-wrap {
+    width: calc(100% - 300px);
+    padding: 37.5px 25px;
+    background-color: #F5F5F5;
+}
+
+.content {
+    width: 100%;
+    padding: 40px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 
+        0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.content-title{
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 25px;
+}
+
+.form-group label{
+    padding-bottom: 5px;
+}
+
+.input-box{
+    padding-bottom: 30px;
+}
+
+.input-box-file img{
+    max-width: 150px;
+}
+
+.input-box-file-img{
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.input-box-file-img img{
+    margin: 0 10px 10px 0;
+}
+
+.back-switch.form-check.form-switch{
+    min-height: 25px;
+}
+
+.back-switch.form-check.form-switch .form-check-input{
+    width: 55px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.back-btn-wrap{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 50px;
+}
+
+.back-btn-wrap .btn{
+    margin-left: 15px;
+}
+
+/* ===== 列表 ===== */
+.list-wrap{
+    width: 100%;
+}
+

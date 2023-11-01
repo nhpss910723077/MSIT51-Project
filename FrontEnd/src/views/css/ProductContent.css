@@ -1,0 +1,505 @@
+/* 產品圖slick */
+.product-img-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+.product-img {
+    width: 70%;
+}
+
+/* 上方內容content */
+.product-content {
+    margin: 15px;
+}
+
+.product-content h1 {
+    font-weight: bold;
+    font-size: 30px;
+    margin: 15px;
+}
+
+.product-content h2 {
+    font-size: 25px;
+    margin: 15px;
+}
+
+.product-content .sale-price {
+    font-size: 25px;
+    font-weight: bold;
+    color: red;
+}
+
+.rating{
+    color: rgb(240, 175, 12);
+    font-weight: bolder;
+    display: inline-flex;
+    margin-top: 0;
+}
+
+.rating2 {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* 上方按鈕button */
+.product-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.product-button button {
+    padding: 15px;
+    font-size: 25px;
+    border: 2px solid var(--bg-color1);
+    background-color: white;
+    color: var(--bg-color1);
+    border-radius: 10px;
+}
+
+.product-button button:hover,
+.product-button .btn:active {
+    background-color: var(--bg-color1);
+    color: white;
+}
+
+.product-button .btn:active {
+    transform: scale(0.9);
+    box-shadow: inset 0 0 30px 5px rgba(0, 0, 0, .2);
+}
+
+.product-button p {
+    margin-top: auto;
+}
+
+/* 產品內容+頁籤排版 */
+.product-all-container {
+    display: grid;
+    place-items: center;
+}
+
+.product-all-container .product-content-container {
+    width: 90%;
+}
+
+/* 頁籤nav-container */
+.product-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 30px;
+    padding: 10px;
+    border-bottom: none;
+    white-space: nowrap;
+}
+
+.product-container .nav-link {
+    padding: 10px 45px;
+    border: 3px solid var(--bg-color1);
+    color: var(--bg-color1);
+    border-bottom: none;
+    border-bottom: 3px solid var(--bg-color1);
+    width: 200px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.nav-tabs .nav-link.active {
+    --bs-nav-tabs-link-active-bg: var(--bg-color1);
+    border: 3px solid var(--bg-color1);
+    color: white;
+}
+
+.nav-tabs .nav-link:hover {
+    border: 3px solid var(--bg-color1);
+    background-color: var(--bg-color2);
+    color: var(--bg-color1);
+}
+
+.nav-tabs .nav-link.active:hover {
+    background-color: var(--bg-color1);
+    color: white;
+}
+
+/* toggle */
+.product-toggle-title {
+    display: none;
+    width: 100%;
+    text-align: center;
+    border: 1px black solid;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.product-toggle-title {
+    background-color: var(--bg-color1);
+    border-radius: 10px;
+    color: white;
+    font-size: 30px;
+}
+
+/* 1400px的時候toggle按鈕會出現 */
+@media (max-width: 1400px) {
+    .product-toggle-title {
+        display: block;
+    }
+
+    .product-container .nav-link {
+        width: 100%;
+    }
+}
+
+
+/* 產品內容 */
+.product-content-container {
+    white-space: pre-line;
+    padding: 0 20px;
+}
+
+.product-content-container p {
+    font-size: 20px;
+}
+
+/* 書評 */
+.user-comment-content p:first-child {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.user-comment-content{
+    margin-top: 20px;
+}
+
+/* 二手書徵求 */
+.userUsedBook{
+    cursor: grab;
+}
+
+.reusedbook-container .container {
+    width: 100%;
+    padding: 0px;
+}
+
+.reused-button {
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    padding: 20px;
+}
+
+.all-data{
+    font-size: 25px;
+}
+
+.reused-button p {
+    text-align: center;
+    font-size: 40px;
+}
+
+.reused-button button {
+    font-size: 30px;
+    color: white;
+    background-color: var(--bg-color1);
+    border-radius: 10px;
+}
+
+.reused-button button:hover,
+.reused-tbody button:hover,
+.reusedbook-container button:hover {
+    transition: all 0.3s ease-in-out;
+    opacity: 0.7;
+}
+
+.reused-button button:active,
+.reused-tbody button:active,
+.reusedbook-container button:active {
+    transform: scale(0.9);
+    box-shadow: inset 0 0 30px 5px rgba(0, 0, 0, .2);
+}
+
+.reusedbook-container hr {
+    border: var(--bg-color1) 2px solid;
+    opacity: 1;
+    margin: 40px 0;
+}
+
+/* 二手書內容 */
+.reused-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reused-title h2 {
+    color: var(--bg-color1);
+    font-weight: bolder;
+}
+
+.reused-title select {
+    font-size: 20px;
+    border: 2px solid var(--bg-color1);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+option:hover {
+    font-size: 20px;
+    border: 2px solid var(--bg-color1);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.reused-thead {
+    border-bottom: var(--bg-color1) 2px solid;
+    font-size: 25px;
+    text-align: center;
+}
+
+.reused-tbody {
+    border-bottom: var(--bg-color1) 1px solid;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.reused-tbody tr td {
+    vertical-align: middle;
+}
+
+.reused-tbody button {
+    font-size: 20px;
+    color: white;
+    background-color: var(--bg-color1);
+    border-radius: 10px;
+}
+
+.reusedbook-container .col-lg-12 {
+    display: grid;
+    place-items: center;
+}
+
+.reusedbook-container button {
+    font-size: 30px;
+    color: white;
+    background-color: var(--bg-color1);
+    border-radius: 10px;
+}
+
+.reused-book {
+    width: 50px;
+    cursor: pointer;
+}
+
+.user-book-img img {
+    width: 90%;
+}
+
+.user-book-img {
+    text-align: center;
+}
+
+@media(max-width:991px) {
+    .reused-tbody button {
+        font-size: 20px;
+    }
+
+    .reused-tbody {
+        font-size: 15px;
+    }
+
+    .reused-thead {
+        font-size: 20px;
+    }
+}
+
+/* 推薦輪播 */
+#product-suggest h1 {
+    color: var(--bg-color1);
+    font-weight: bolder;
+    margin: 0 0 25px 20px;
+}
+
+.suggestSwiper-container {
+    display: flex;
+    justify-content: center;
+}
+
+.each-book {
+    width: 200px;
+    height: 350px;
+    display: block;
+    text-align: center;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.card-img-top {
+    width: 200px;
+    height: 260px;
+    border-radius: 5px;
+    opacity: 1;
+}
+
+.card-img {
+    max-height: 100%;
+}
+
+.card-title {
+    font-size: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    position: relative;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: black;
+    font-weight: bolder;
+}
+
+.each-book .card-img-top {
+    box-shadow: 0px 2px 13px 2px black;
+}
+
+.suggestSwiper {
+    padding: 25px;
+}
+
+.suggestSwiper .swiper-wrapper {
+    display: flex;
+}
+
+
+/* rwd表格 */
+.rwd-content-data {
+    display: none;
+}
+
+.rwd-user-img {
+    width: 150px;
+}
+
+.rwd-user-img img {
+    object-fit: contain;
+}
+
+.rwd-used-left {
+    justify-content: center;
+    display: flex;
+}
+
+
+.rwd-used-cart {
+    position: absolute;
+    display: flex;
+    bottom: 15px;
+    right: 15px;
+}
+
+.rwd-content-container {
+    padding-bottom: 80px;
+    position: relative;
+    font-size: 20px;
+}
+
+.rwd-used-cart button {
+    color: white;
+    background-color: var(--bg-color1);
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#product-content-data .row {
+    display: flex;
+    justify-content: center;
+}
+
+@media(max-width:390px) {
+    .reused-button p {
+        font-size: 30px;
+    }
+
+    .rwd-content-container {
+        font-size: 18px;
+    }
+
+    .rwd-used-cart button {
+        font-size: 15px;
+    }
+
+    .card-title {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .rwd-content-data {
+        display: block;
+        overflow: hidden;
+    }
+
+    .product-container .nav-link {
+        width: 100%;
+    }
+
+    .used-table {
+        display: none;
+    }
+
+    .product-img {
+        width: 50%;
+    }
+
+    .product-content h1,
+    .product-toggle-title,
+    .product-container .nav-link,
+    #product-suggest h1,
+    .reused-button button {
+        font-size: 25px;
+    }
+
+    .product-content h2,
+    .product-content span,
+    .product-content-container p,
+    .product-button button {
+        font-size: 20px;
+    }
+
+
+    .each-book .card-body>a {
+        font-size: 15px;
+    }
+
+    .card-img-top {
+        width: 170px;
+        height: 200px;
+    }
+
+    .each-book a {
+        display: flex;
+        justify-content: center;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        --swiper-navigation-size: 35px;
+    }
+
+    .suggestSwiper .swiper-wrapper {
+        height: 280px;
+    }
+
+    .reused-title select{
+        font-size: 15px;
+        padding: 3px;
+    }
+}
